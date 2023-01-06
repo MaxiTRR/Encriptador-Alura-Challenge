@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,8 +23,17 @@
     max-height: 80vh;
     /*padding: 30px;*/
     align-items: flex-start;
-    justify-content: space-around;
-    margin: 30px;
+    justify-content: space-between;
+    /* margin: 30px; */
+    font-family: 'Roboto Mono', monospace;
+}
+
+.encriptador input{
+    border-bottom: 2px solid black;
+}
+
+.encriptador input:focus{
+    outline: none;
 }
 
 .textarea{
@@ -32,7 +43,6 @@
     border: none;
     background-color: transparent;
 }
-
 
 .btn{
     background-color: rgb(8, 138, 138);
@@ -52,16 +62,35 @@
     flex-direction: column;
     background-color: aqua;
     width: 400px;
-    height: 600px;
+    height: 631px;
     max-height: 80vh;
     border-radius: 30px;
     justify-content: center;
     text-align: center;
     padding: 30px;
     overflow-wrap: break-word;
+    font-family: 'Roboto Mono', monospace;
 }
 
+.text-show{
+    word-break: break-all;
+}
+.des-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn-copiar{
+    background-color: rgb(8, 138, 138);
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 24px;
+    border: none;
+    width: 80%;
+}
 
 footer{
     text-align: center;
